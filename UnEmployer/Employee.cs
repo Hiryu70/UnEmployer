@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnEmployer
 {
-    class Employee:Human
+    class Employee : Human
     {
         public string Name { get; set; }
         public int Money { get; set; }
@@ -16,10 +16,10 @@ namespace UnEmployer
         {
             age = Age;
             int money = 0;
-                for(int i = age; i < 68; i++)
+            for (int i = age; i < 68; i++)
             {
                 money += 100000;
-               
+
             }
             return money;
         }

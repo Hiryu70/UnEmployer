@@ -24,11 +24,10 @@ namespace UnEmployer
             employer2.Name = "Andrey";
             employer3.Name = "Polina";
 
-            int money1=employer1.Method(employer1.Age);
-            int money2=employer2.Method(employer2.Age);
-            int money3=employer3.Method(employer3.Age);
-            employer2.Method(employer2.Age);
-            employer3.Method(employer3.Age);
+            int money1 = employer1.Method(employer1.Age);
+            int money2 = employer2.Method(employer2.Age);
+            int money3 = employer3.Method(employer3.Age);
+
             Console.WriteLine("Sotrudnik " + employer1.Name + " skopil: " + money1);
             Console.WriteLine("Sotrudnik " + employer2.Name + " skopil: " + money2);
             Console.WriteLine("Sotrudnik " + employer3.Name + " skopil: " + money3);
