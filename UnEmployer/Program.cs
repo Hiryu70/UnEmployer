@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UnEmployer
 {
@@ -16,6 +12,7 @@ namespace UnEmployer
             {
                 Report.ShowPensiyuInConsole(employee);
             }
+            Console.ReadKey();
         }
     }
 }

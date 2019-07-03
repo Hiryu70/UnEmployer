@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeesRepository.cs" />
+    <Compile Include="Enum.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
