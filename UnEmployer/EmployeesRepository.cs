@@ -12,9 +12,9 @@ namespace UnEmployer
         {
             var employees = new List<Employee>()
             {
-                new Employee() { Name = "Nikola", Age = 18, Gender="Male" },
-                new Employee() { Name = "Andrey", Age = 20, Gender="Male" },
-                new Employee() { Name = "Polina", Age = 30, Gender="Female" }
+                new Employee() { Name = "Nikola", Age = 18 },
+                new Employee() { Name = "Andrey", Age = 20 },
+                new Employee() { Name = "Polina", Age = 30 }
             };
             return  employees;
         }
