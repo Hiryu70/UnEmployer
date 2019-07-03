@@ -8,14 +8,26 @@ namespace UnEmployer
 {
     class Employee : Human
     {
-        public int Getpensiyu()
+        internal enum Koefficient { KoeffForMale = 1, KoeffForFemale = 2 }
+        int pensiya = 0;
+        private readonly int Sum = 100000;
+
+        public int GetPension()
         {
-            int pensiya = 0;
             for (int i = Age; i < 68; i++)
             {
-                pensiya += 100000;
+                switch (Gender)
+                {
+                    case "Male":
+                        pensiya = Sum * (int)Koefficient.KoeffForMale;
+                        break;
+                    case "Female":
+                        pensiya += Sum * (int)Koefficient.KoeffForFemale;
+                        break;
+                }
             }
             return pensiya;
         }
     }
 }
+

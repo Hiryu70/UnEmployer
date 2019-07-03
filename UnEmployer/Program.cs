@@ -16,6 +16,8 @@ namespace UnEmployer
             {
                 Report.ShowPensiyuInConsole(employee);
             }
+            Console.ReadKey();
+
         }
     }
 }
