@@ -8,20 +8,14 @@ namespace UnEmployer
 {
     class Employee : Human
     {
-
-
-        public void GetSum(int age, string name)
+        public int Getpensiyu()
         {
-            int money = 0;
-            for (int i = age; i < 68; i++)
+            int pensiya = 0;
+            for (int i = Age; i < 68; i++)
             {
-                money += 100000;
-
+                pensiya += 100000;
             }
-            Report members = new Report(name,money);
-            
-            
-
+            return pensiya;
         }
     }
 }

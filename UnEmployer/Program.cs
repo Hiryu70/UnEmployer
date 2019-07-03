@@ -6,27 +6,16 @@ using System.Threading.Tasks;
 
 namespace UnEmployer
 {
-    class Program
+    internal static class Program
     {
         static void Main(string[] args)
         {
-
-
-
-            EmployeesRepository people = new EmployeesRepository();
-            List<Employee> getemployees = people.GetEmployees();
-            foreach (Employee members in getemployees)
+            var repository = new EmployeesRepository();
+            var employees = repository.GetEmployees();
+            foreach (var employee in employees)
             {
-                members.GetSum(members.Age,members.Name);
+                Report.ShowPensiyuInConsole(employee);
             }
-
-
-
-
-
-
-
-
         }
     }
 }

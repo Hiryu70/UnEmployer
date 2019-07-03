@@ -6,20 +6,17 @@ using System.Threading.Tasks;
 
 namespace UnEmployer
 {
-    class EmployeesRepository:Human
+    internal class EmployeesRepository
     {
         public List<Employee> GetEmployees()
         {
-
-            List<Employee> GetCollection = new List<Employee>(3)
+            var employees = new List<Employee>()
             {
                 new Employee() { Name = "Nikola", Age = 18 },
                 new Employee() { Name = "Andrey", Age = 20 },
                 new Employee() { Name = "Polina", Age = 30 }
             };
-
-            return  GetCollection;
-
+            return  employees;
         }
     }
 }

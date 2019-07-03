@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace UnEmployer
 {
-    class Report
+    internal static class Report
     {
-         public  Report(string name,int money)
+         public static void ShowPensiyuInConsole(Employee employee)
         {
-            Console.WriteLine($"Sotrudnik {name} skopil: {money}");
+            Console.WriteLine($"Sotrudnik {employee.Name} skopil: {employee.Getpensiyu()}");
             Console.ReadKey();
         }
-
-
     }
 }
